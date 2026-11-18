@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Days to Us is a private space for long-distance couples. See what’s in the beta, what we’ve tested, and what comes next.">
+  <meta name="theme-color" content="#faf5ee">
+  <title>Days to Us · Project roadmap</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="roadmap.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell site-header-inner">
+      <a class="brand" href="#top"><img src="assets/icon.png" width="36" height="36" alt="">Days to Us</a>
+      <nav aria-label="Main navigation">
+        <a href="#built">Features</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <div class="header-actions">
+        <select class="appearance" aria-label="Appearance" hidden>
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+        <a class="header-link" href="https://days-to-us-beta.pages.dev/">Open beta <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> Invite-only web beta</p>
+        <h1 id="intro">The days<br>until <em>us.</em></h1>
+        <p class="intro">A private space for long-distance couples. Plan your next visit together, stay in touch, and share your location when you choose.</p>
+        <div class="hero-links">
+          <a class="button" href="mailto:yrntotstmmy2d7s@gmail.com?subject=Days%20to%20Us%20closed%20beta%20request&amp;body=Hi%20Days%20to%20Us%2C%0D%0A%0D%0AI'd%20like%20to%20request%20access%20to%20the%20closed%20beta.%0D%0A%0D%0ASign-up%20email%3A%0D%0APhone%20(iPhone%20or%20Android)%3A%0D%0A%0D%0AThanks!">Request beta access <span aria-hidden="true">↗</span></a>
+          <a class="simple-link" href="#roadmap">Explore the roadmap <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-visual" role="region" aria-label="Product preview">
+        <div class="rings" aria-hidden="true"><span></span><span></span></div>
+        <div class="preview-controls" data-preview-controls role="group" aria-label="Choose a product preview" hidden>
+          <button type="button" data-preview="countdown" aria-controls="preview-countdown" aria-pressed="true">Countdown</button>
+          <button type="button" data-preview="widgets" aria-controls="preview-widgets" aria-pressed="false">Widgets</button>
+        </div>
+        <figure class="preview-panel" id="preview-countdown" data-preview-panel="countdown">
+          <div class="phone">
+            <img src="assets/countdown.png" alt="The Days to Us home screen with a 25-day reunion countdown, 424 days together, and shared date controls." width="1080" height="2400" fetchpriority="high">
+          </div>
+          <figcaption>Shared dates with a sample reunion countdown</figcaption>
+        </figure>
+        <figure class="preview-panel" id="preview-widgets" data-preview-panel="widgets" hidden>
+          <div class="phone">
+            <img src="assets/widgets.png" alt="Android Home Screen with compact Days Together and expanded Next Visit widgets, both showing sample dates." width="1080" height="2400" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Resizable widgets in the Android development build</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="built" id="built" aria-labelledby="built-title">
+      <div class="shell">
+        <div class="section-title">
+          <h2 id="built-title">What’s built</h2>
+          <p>Start with a private invite. Once you’re paired, every shared date and message lives in one place.</p>
+        </div>
+        <div class="feature-grid">
+          <article><h3>A space for two</h3><p>Sign in with email and pair with a private, single-use invite that expires after 24 hours.</p></article>
+          <article><h3>Dates that stay in sync</h3><p>Save your anniversary and next visit together. See how many days you’ve shared and how many are left until you meet again.</p></article>
+          <article><h3>Private chat</h3><p>Send messages in real time and come back to your shared conversation later.</p></article>
+          <article><h3>Distance on demand</h3><p>When both partners opt in and have recent readings, the map shows how many kilometers apart they are. Browser sharing runs while the app is open.</p></article>
+          <article><h3>Control over sharing</h3><p>Stop sharing location, leave your shared space, or delete your account from the app.</p></article>
+          <article><h3>Save it to your Home Screen</h3><p>Open the beta in Safari and add a Home Screen icon. The native builds have separate widgets for Days Together, Next Visit, and Distance.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap shell" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="section-title">
+        <h2 id="roadmap-title">The roadmap</h2>
+        <p>Follow what’s live in the browser, what we’re testing on phones, and what we’re exploring next.</p>
+      </div>
+      <div class="roadmap-toolbar">
+        <div class="filters" role="group" aria-label="Filter roadmap" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="live" aria-pressed="false">Live</button>
+          <button type="button" data-filter="next" aria-pressed="false">Next</button>
+          <button type="button" data-filter="later" aria-pressed="false">Later</button>
+        </div>
+        <p class="filter-count" role="status"></p>
+      </div>
+      <div class="roadmap-list">
+        <article class="milestone" data-stage="live">
+          <span class="stage stage-live">Live</span>
+          <div><h3>Invite-only browser beta</h3><p>Pairing, shared dates, chat, and foreground distance sharing are available on the web. Distance sharing has been confirmed in Safari.</p></div>
+        </article>
+        <article class="milestone" data-stage="next">
+          <span class="stage stage-next">Next</span>
+          <div><h3>Bring in more couples</h3><p>Set up confirmation emails for more testers and try the complete experience with couples on different networks.</p></div>
+        </article>
+        <article class="milestone" data-stage="next">
+          <span class="stage stage-next">Next</span>
+          <div><h3>Android install and widgets</h3><p>Resizable widgets and background location have passed emulator checks. The next test is an install on a physical Android phone.</p></div>
+        </article>
+        <article class="milestone" data-stage="next">
+          <span class="stage stage-next">Next</span>
+          <div><h3>iPhone beta</h3><p>The iPhone layouts and TestFlight configuration are prepared. A signed build and device checks come next, including widgets and location with the screen locked.</p></div>
+        </article>
+        <article class="milestone" data-stage="later">
+          <span class="stage stage-later">Later</span>
+          <div><h3>More ways to mark time together</h3><p>Explore relationship fun facts, milestones, and optional premium features after hearing what couples use most.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="brand" href="#top">Days to Us</a>
+      <div class="footer-links">
+        <a class="footer-beta" href="privacy.html">Privacy and browser storage</a>
+        <a class="footer-beta" href="https://days-to-us-beta.pages.dev/">Open the invite-only beta <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
